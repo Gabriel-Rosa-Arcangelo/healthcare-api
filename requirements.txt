@@ -1,0 +1,24 @@
+Django==4.2.14
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.1
+django-filter==24.3
+drf-spectacular==0.27.2
+
+celery==5.4.0
+redis==5.0.8
+
+# PDF + gráficos (dark)
+reportlab>=4.0.8
+matplotlib~=3.8
+
+# Seed demo
+Faker==25.8.0
+
+# DB (local/prod)
+psycopg2-binary==2.9.9
+
+# Config .env (opcional, mas útil)
+python-dotenv==1.0.1
+
+# (Opcional, se for usar DataFrames em algum relatório)
+# pandas==2.2.2

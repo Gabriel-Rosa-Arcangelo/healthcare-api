@@ -1,0 +1,43 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+staticfiles/
+static_root/
+media/
+!media/.gitkeep
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Tests / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Env / secrets
+.env
+.env.*.local
+*.env
+
+# Node (se usar no futuro)
+node_modules/
