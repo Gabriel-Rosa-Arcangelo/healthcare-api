@@ -1,27 +1,27 @@
 # 🏥 Healthcare API (Django + DRF + JWT + Celery)
 
-Secure REST API to manage **Patients**, **Samples**, **Lab Results**, and generate **clinical PDF reports** in the background — portfolio‑ready with a dark PDF layout.
+A secure REST API to manage **Patients**, **Samples**, and **Lab Results**, with background tasks for generating **dark-themed clinical PDF reports** — built for portfolio and real-world healthcare workflows.
 
 ---
 
 ## 🚀 Tech Stack
-- **Django** + **Django REST Framework**
-- **Auth:** JWT (SimpleJWT)
-- **Async:** Celery + Redis
-- **DB:** PostgreSQL (SQLite dev-friendly)
-- **PDF:** ReportLab + Matplotlib (dark charts)
-- **Docs:** OpenAPI/Swagger (drf-spectacular)
-- **Docker** (optional)
+- **Backend:** Django + Django REST Framework  
+- **Auth:** JWT (SimpleJWT)  
+- **Async:** Celery + Redis  
+- **Database:** PostgreSQL (SQLite for dev)  
+- **PDF Reports:** ReportLab + Matplotlib (dark charts)  
+- **Docs:** OpenAPI/Swagger (drf-spectacular)  
+- **Deploy:** Docker (optional)  
 
 ---
 
 ## ✨ Features
-- JWT authentication (access/refresh)
-- CRUD for Patients, Samples, Results
-- Filtering & pagination
-- Background report generation (Celery tasks)
-- Dark, single‑page PDF (metrics + bar + pie)
-- Demo seed with Faker
+✅ JWT authentication (access/refresh)  
+✅ CRUD for Patients, Samples, Results  
+✅ Filtering & pagination  
+✅ Background PDF generation with Celery  
+✅ Dark, single-page PDF layout (metrics + bar + pie charts)  
+✅ Demo data seeding with Faker  
 
 ---
 
@@ -36,7 +36,7 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 # recommend: reportlab>=4.0 (avoid md5 usedforsecurity issue)
 
-# 3) Migrate
+# 3) Run migrations
 python manage.py migrate
 
 # 4) Create superuser
@@ -47,31 +47,43 @@ redis-server
 # or
 docker run -p 6379:6379 redis:7
 
-# 6) Celery worker (term 1)
+# 6) Celery worker (terminal 1)
 celery -A config worker -l info
 
-# 7) Run API (term 2)
+# 7) Run API (terminal 2)
 python manage.py runserver
+```
 
+Then open:  
+- API root → [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)  
+- Swagger → [http://127.0.0.1:8000/api/schema/swagger-ui/](http://127.0.0.1:8000/api/schema/swagger-ui/)  
 
-### Swagger
+---
+
+## 📸 Screenshots
+
+### 🔑 Swagger UI
 <img src="docs/screenshot-swagger.png" width="640"/>
 
-### Reports
+### 📊 Report generation
 <img src="docs/screenshot-report.png" width="640"/>
 
-### Settings & Notes
+📄 [Download a sample PDF report](docs/sample_report.pdf)
 
-Use ReportLab ≥ 4.0 (evita erro usedforsecurity em envs antigos).
+---
 
-Para produção: PostgreSQL + S3 (media) + Redis gerenciado.
+## ⚙️ Settings & Notes
+- Use **ReportLab ≥ 4.0** (avoids `usedforsecurity` bug).  
+- For production: PostgreSQL + S3 (media) + Redis.  
+- Always set `DEBUG=False` and configure `ALLOWED_HOSTS`.  
 
-DEBUG=False e ALLOWED_HOSTS configurados.
+---
 
-📄 License
+## 📄 License
+MIT  
 
-MIT
+---
 
-👤 Author
-
-Built by Gabriel Rosa Arcangelo (@Gabriel-Rosa-Arcangelo)
+## 👤 Author
+Built with ❤️ by **Gabriel Rosa Arcangelo** (@Gabriel-Rosa-Arcangelo)  
+Need healthcare automation or custom systems? Let’s connect on LinkedIn! 
