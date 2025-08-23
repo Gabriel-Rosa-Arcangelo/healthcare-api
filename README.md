@@ -68,8 +68,6 @@ Then open:
 ### 📊 Report generation
 <img src="docs/screenshot-report.png" width="640"/>
 
-📄 [Download a sample PDF report](docs/sample_report.pdf)
-
 ---
 
 ## ⚙️ Settings & Notes
