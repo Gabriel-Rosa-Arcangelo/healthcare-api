@@ -67,7 +67,7 @@ python manage.py runserver
 
 Then open:  
 - API root → [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)  
-- Swagger → [http://127.0.0.1:8000/api/schema/swagger-ui/](http://127.0.0.1:8000/api/schema/swagger-ui/)  
+- Swagger → [http://127.0.0.1:8000/api/docs/](http://127.0.0.1:8000/api/docs/)  
 
 ---
 
