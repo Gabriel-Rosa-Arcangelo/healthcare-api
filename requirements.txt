@@ -21,4 +21,4 @@ psycopg2-binary==2.9.9
 python-dotenv==1.0.1
 
 # (Opcional, se for usar DataFrames em algum relatório)
-# pandas==2.2.2
+pandas==2.2.2

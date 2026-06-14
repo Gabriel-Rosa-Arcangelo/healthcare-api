@@ -23,6 +23,6 @@ class TestResultViewSet(viewsets.ModelViewSet):
     serializer_class = TestResultSerializer
     permission_classes = [LabsPermission]
     filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
-    filterset_fields = ["sample","analyte","flagged"]
+    filterset_fields = ["sample","analyte"]
     search_fields = ["analyte"]
     ordering_fields = ["value"]

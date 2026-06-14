@@ -9,5 +9,5 @@ class PatientSerializer(serializers.ModelSerializer):
         fields = ["id","patient_code","first_name","last_name","full_name","birth_date","sex","created_at"]
         read_only_fields = ["id","patient_code","created_at","full_name"]
 
-    def get_full_name(self, obj):
+    def get_full_name(self, obj) -> str:
         return f"{obj.first_name} {obj.last_name}".strip()

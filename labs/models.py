@@ -28,7 +28,7 @@ class Result(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     @property
-    def flagged(self):
+    def flagged(self) -> bool:
         if self.ref_low is not None and self.value < self.ref_low:
             return True
         if self.ref_high is not None and self.value > self.ref_high:
@@ -37,4 +37,3 @@ class Result(models.Model):
 
     def __str__(self):
         return f"{self.analyte}: {self.value}{self.unit}"
-

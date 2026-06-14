@@ -6,3 +6,13 @@ class ReportSerializer(serializers.ModelSerializer):
         model = Report
         fields = ["id","patient","sample","status","file","created_at"]
         read_only_fields = ["id","status","file","created_at"]
+
+
+class GenerateReportRequestSerializer(serializers.Serializer):
+    patient_id = serializers.IntegerField(required=False)
+    sample_id = serializers.IntegerField(required=False)
+
+
+class GenerateReportResponseSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
+    status = serializers.CharField()
