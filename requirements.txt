@@ -18,7 +18,7 @@ Faker==25.8.0
 psycopg2-binary==2.9.9
 
 # Config .env (opcional, mas útil)
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 dj-database-url==2.2.0
 gunicorn==23.0.0
 
