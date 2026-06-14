@@ -88,11 +88,6 @@ Then open:
 
 ---
 
-## 📄 License
-MIT  
-
----
-
 ## 👤 Author
 Built with ❤️ by **Gabriel Rosa Arcangelo** (@Gabriel-Rosa-Arcangelo)  
 Need healthcare automation or custom systems? Let’s connect on LinkedIn! 
