@@ -27,6 +27,17 @@ A secure REST API to manage **Patients**, **Samples**, and **Lab Results**, with
 
 ## 🖥️ Quickstart (Local)
 
+### Docker Compose
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
+Then open Swagger UI at http://127.0.0.1:8000/api/docs/
+
+### Python environment
+
 ```bash
 # 1) Create & activate venv
 python -m venv .venv
